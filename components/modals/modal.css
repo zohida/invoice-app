@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+.modal-invoice{
+    background-color: #FFF;
+    border-radius: 0px 20px 20px 0px;
+    max-width: 719px;
+    width: 100%;
+    padding: 59px 56px 32px 159px;
+}
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.form-wrapper input {
+    max-width: 152px;
+    width: 100%;
+}
+
+.bill-from-title {
+    margin: 46px 0 24px;
+    color:  #7C5DFA;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.bill-to {
+    margin-top: 49px;
+}
+
+.bill-to-title {
+    margin-top: 0;
+}
+
+.form-data-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-data-wrapper input {
+    max-width: 240px;
+    width: 100%;
+}
+
+input[type="date"] {
+    background-image: url("../../images/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 20px;
+    margin-right: 83px;
+    padding-right: 16px;
+    /* color: #7E88C3; */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.invoice-items-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.invoice-items-box button {
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 39px;
+}
+
+.invoice-modal-footer {
+    display: flex;
+    align-items: center;
+}
+
+.modal-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 139px;
+}
+
+.modal-btn-box .btn-draft {
+    max-width: 133px;
+    width: 100%;
+}
+
+.btn-discard{
+    max-width: 96px;
+    width: 100%;
+}
+
+.modal-btn-box .btn-save {
+    max-width: 128px;
+    width: 100%;
+}
+
+.modal-delete {
+    position: fixed;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+    transform: translate(-50%, -50%);
+    max-width: 480px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    padding: 51px 48px 48px;
+}
+
+.delete-title {
+    margin: 0;
+}
+
+.modal-subtitle {
+    margin: 12px 0 0;
+    color:  #888EB0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.modal-buttons .btn-primary {
+    max-width: 91px;
+    width: 100%;
+}
+
+.modal-buttons .btn-danger {
+    max-width: 89px;
+    width: 100%;
+}
+

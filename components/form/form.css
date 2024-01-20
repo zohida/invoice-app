@@ -1,0 +1,41 @@
+input {
+    outline: none;
+    cursor: pointer;
+    color:  #0C0E16;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: -0.25px;
+    border-radius: 4px;
+    border: 1px solid  #DFE3FA;
+    background: #FFF;
+    padding: 18px 30px 15px 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label {
+    color:  #7E88C3;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: -0.1px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+input:focus {
+    border: 1px solid  #7C5DFA;
+}
+
+input.error {
+    border: 1px solid  #EC5757;
+}

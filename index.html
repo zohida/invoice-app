@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Invoice app</title>
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+</head>
+<body>
+   <div class="sidebar">
+      <img 
+      class="sidebar-img"
+      src="./images/cheese.png" 
+      alt="Logo"
+      width="103" 
+      height="103">
+      <div class="sidebar-pics-wrapper">
+         <img class="moon-pic" 
+         src="./images/moon.svg" 
+         alt="Moon"
+         width="20"
+         height="20">
+         <img src="./images/user.svg" alt="User pic"
+         width="40"
+         height="40">
+      </div>
+   </div>
+   
+   <div class="container">
+      <div class="header">
+         <div class="header-title-wrapper">
+            <h1 class="header-title">
+               <a class="header-link" href="./index.html">INVOICES</a>
+            </h1>
+            <p class="header-text">No invoices</p>
+         </div>
+
+         <div class="header-buttons">
+            <div class="header-filter">
+               Filter by status
+            </div>
+   
+            <div class="header-btn-wrapper">
+               <button class="header-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="32" 
+                  height="32" 
+                  viewBox="0 0 32 32" 
+                  fill="none">
+                     <circle 
+                     cx="16" 
+                     cy="16"
+                      r="16" 
+                      fill="white"/>
+                     <path 
+                     d="M17.3131 21.0229V17.3131H21.0229V14.7328H17.3131V11.0229H14.7328V14.7328H11.0229V17.3131H14.7328V21.0229H17.3131Z" 
+                     fill="#7C5DFA"/>
+                   </svg>
+                   New Invoice
+               </button>
+            </div>
+         </div>
+
+      </div>
+      
+      <div class="no-info">
+         <img 
+         src="./images/noinfo.png" 
+         alt="Girl shouting"
+         width="241"
+         height="200">
+         <h2 class="info-title">
+            There is nothing here
+         </h2>
+         <p class="info-text">
+            Create an invoice by clicking the 
+            <span>New Invoice</span> button and get started
+         </p>
+      </div>
+   </div>
+
+
+   <div class="overlay"></div>
+</body>
+</html>
