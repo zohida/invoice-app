@@ -5,6 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Invoice app</title>
    <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./components/form/form.css">
+   <link rel="stylesheet" href="./components/modals/modal.css">
+   <link rel="stylesheet" href="./components/dropdown/dropdown.css">
    <link rel="stylesheet" href="./css/main.css">
    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
@@ -19,6 +22,7 @@
       <div class="sidebar-pics-wrapper">
          <img class="moon-pic" 
          src="./images/moon.svg" 
+         id="icon-moon"
          alt="Moon"
          width="20"
          height="20">
@@ -27,45 +31,200 @@
          height="40">
       </div>
    </div>
-   
-   <div class="container">
-      <div class="header">
-         <div class="header-title-wrapper">
-            <h1 class="header-title">
-               <a class="header-link" href="./index.html">INVOICES</a>
-            </h1>
-            <p class="header-text">No invoices</p>
-         </div>
 
-         <div class="header-buttons">
-            <div class="header-filter">
-               Filter by status
+   <div class="modal-invoice invoice">
+      <h2 class="invoice-title">New Invoice</h2>
+      <div class="bill-from">
+         <h4 class="bill-from-title">
+            Bill From
+         </h4>
+         <form class="invoice-form form">
+            <div class="form-box">
+               <label for="address">Street Address</label>
+               <input type="text" id="address" name="address" autocomplete="off">
             </div>
+            <div class="form-wrapper">
+               <div class="form-box">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" autocomplete="off">
+               </div>
+               <div class="form-box">
+                  <label for="postcode">Post Code</label>
+                  <input type="text" id="postcode" name="postcode" autocomplete="off">
+               </div>
+               <div class="form-box">
+                  <label for="country">Country</label>
+                  <input type="text" id="country" name="country" autocomplete="off">
+               </div>
+            </div>
+         </form>
+      </div>
+      
+      <div class="bill-from bill-to">
+         <h4 class="bill-from-title bill-to-title">
+            Bill To
+         </h4>
+         <form class="invoice-form form">
+            <div class="form-box">
+               <label for="name">Client’s Name</label>
+               <input type="text" id="name" name="name" autocomplete="off">
+            </div>
+            <div class="form-box">
+               <label for="email">Client’s Email</label>
+               <input type="email" id="email" name="email" autocomplete="off">
+            </div>
+            <div class="form-box">
+               <label for="address2">Street Address</label>
+               <input type="text" id="address2" name="address2" autocomplete="off">
+            </div>
+            <div class="form-wrapper">
+               <div class="form-box">
+                  <label for="city2">City</label>
+                  <input type="text" id="city2" name="city2" autocomplete="off">
+               </div>
+               <div class="form-box">
+                  <label for="postcode2">Post Code</label>
+                  <input 
+                  type="text" 
+                  id="postcode2" 
+                  name="postcode2" 
+                  autocomplete="off">
+               </div>
+               <div class="form-box">
+                  <label for="country2">Country</label>
+                  <input 
+                  type="text" 
+                  id="country2" 
+                  name="country2" 
+                  autocomplete="off">
+               </div>
+            </div>
+            <div class="form-data-wrapper">
+               <div class="form-box">
+                  <label for="date">Invoice Date</label>
+                  <input 
+                  type="date" 
+                  id="date" 
+                  name="date" 
+                  autocomplete="off">
+               </div>
+               <div class="dropdown">
+                     <label  for="name">Payments Terms</label>
+                     <div class="select">
+                         <span class="selected">Net 30 Days</span>
+                         <img class="select-icon" src="../../images/filter-icon.svg" alt="Icon">
+                     </div>
+                     <ul class="menu">
+                         <li class="menu-item">Net 1 Day</li>
+                         <li class="menu-item ">Net 7 Days</li>
+                         <li class="menu-item ">Net 14 Days</li>
+                         <li class="menu-item">Net 30 Days</li>
+                     </ul>
+                 </div>
+            </div>
+            <div class="form-box">
+               <label for="project">Project Description</label>
+               <input type="text" id="project" name="project" autocomplete="off">
+            </div>
+         </form>
+      </div>
+      
+      <div class="invoice-items-box">
+         <h4 class="invoice-items-title">Item List</h4>
+         <ul class="invoice-items-list">
+            <li class="invoice-items-item">
+               <ul class="items-title-list">
+                  <li class="items-title">
+                     Item Name
+                  </li>
+                  <li class="items-title">
+                     Qty.
+                  </li>
+                  <li class="items-title">
+                     Price
+                  </li>
+                  <li class="items-title">
+                     Total
+                  </li>
+               </ul>
+            </li>
+            
+            <li class="invoice-items-item">
+               
+            </li>
+         </ul>
+         <button class="btn btn-primary">+ Add New Item</button>
+      </div>
+      
+      <div class="invoice-modal-footer">
+         <button class="btn btn-primary btn-discard" onclick="closeModal()">Discard</button>
+         <div class="modal-btn-box">
+            <button class="btn btn-draft ">Save as Draft</button>
+            <button class="btn btn-save">Save & Send</button>
+         </div>
+      </div>
+      
+   </div> 
    
-            <div class="header-btn-wrapper">
-               <button class="header-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" 
-                  width="32" 
-                  height="32" 
-                  viewBox="0 0 32 32" 
-                  fill="none">
+   <main class="home-main">
+      <div class="container">
+         <div class="header">
+            <div class="header-title-wrapper">
+               <h1 class="header-title">
+                  <a class="header-link" href="./index.html">INVOICES</a>
+               </h1>
+               <p class="header-text">No invoices</p>
+            </div>
+            
+            <div class="header-buttons">
+               <div class="filter">
+                  <div class="filter-select">
+                      <span class="filter-text">Filter by status</span>
+                      <img class="filter-icon" src="../../images/filter-icon.svg" alt="Icon">
+                  </div>
+                  <ul class="filter-list">
+                      <li class="filter-item ">
+                          <img class="filter-img" src="../../images/check.svg" alt="Icon"
+                          width="16" height="16">
+                          Draft
+                      </li>
+                      <li class="filter-item ">
+                          <img class="filter-img" src="../../images/check.svg" alt="Icon"
+                          width="16" height="16">
+                          Pending
+                      </li>
+                      <li class="filter-item ">
+                          <img class="filter-img" src="../../images/check.svg" alt="Icon"
+                          width="16" height="16">
+                          Paid
+                      </li>
+                  </ul>
+              </div>
+               
+               <div class="header-btn-wrapper">
+                  <button class="header-btn" onclick="CreateInvoice()">
+                     <svg xmlns="http://www.w3.org/2000/svg" 
+                     width="32" 
+                     height="32" 
+                     viewBox="0 0 32 32" 
+                     fill="none">
                      <circle 
                      cx="16" 
                      cy="16"
-                      r="16" 
-                      fill="white"/>
+                     r="16" 
+                     fill="white"/>
                      <path 
                      d="M17.3131 21.0229V17.3131H21.0229V14.7328H17.3131V11.0229H14.7328V14.7328H11.0229V17.3131H14.7328V21.0229H17.3131Z" 
                      fill="#7C5DFA"/>
-                   </svg>
-                   New Invoice
+                  </svg>
+                  New Invoice
                </button>
             </div>
+            </div>
+         
          </div>
-
-      </div>
       
-      <div class="no-info">
+         <div class="no-info">
          <img 
          src="./images/noinfo.png" 
          alt="Girl shouting"
@@ -78,10 +237,13 @@
             Create an invoice by clicking the 
             <span>New Invoice</span> button and get started
          </p>
+         </div>
       </div>
-   </div>
+   </main>
 
+<div class="overlay"></div>
 
-   <div class="overlay"></div>
+<script src="./components/dropdown/dropdown.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

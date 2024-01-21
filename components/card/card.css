@@ -1,0 +1,82 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.card-wrapper:hover {
+    border: 1px solid  #7C5DFA;
+}
+
+.card-id {
+    margin: 0;
+    color:  #7E88C3;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: -0.25px;
+    margin-right: 44px;
+}
+
+.card-id-number {
+    color: #0C0E16;
+}
+
+.card-date {
+    margin: 0;
+    color: #888EB0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+    margin-right: 58px;
+}
+
+.card-time {
+    color: #7E88C3;
+}
+
+.card-info {
+    margin: 0;
+    color: #858BB2;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: -0.1px;
+    margin-right: 107px;
+}
+
+.card-amount {
+    margin: 0;
+    color:  #0C0E16;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.25px;
+    margin-right: 40px;
+}
+
+.card-wrapper::after {
+    display: inline-block;
+    background-image: url("../../images/card-arrow.svg");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 10px;
+    content: "";
+    position: absolute ;
+    right: 32px;
+}

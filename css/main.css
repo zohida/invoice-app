@@ -27,6 +27,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* --light-mode : #F8F8FB;
+    --dark-mode : #000 */
+
+    --light-mode : #000;
+    --dark-mode :#F8F8FB
+}
+
 img{
     vertical-align: middle;
 }
@@ -85,6 +93,8 @@ body{
     min-height: 100vh;
     height: 100%;
     justify-content: space-between;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .sidebar-pics-wrapper {
@@ -106,6 +116,10 @@ body{
     background-color: #494E6E;
     content: "";
     bottom: 64px;
+}
+
+#icon-moon {
+    cursor: pointer;
 }
 
 .container {
@@ -146,8 +160,12 @@ body{
 .header-buttons {
     display: flex;
     align-items: center;
-    gap: 21px;
+    cursor: pointer;
+    max-width: 343px;
+    width: 100%;
 }
+
+
 
 .header-btn {
     display: flex;
@@ -167,6 +185,14 @@ body{
     height: 48px;
     padding: 8px 17px 8px 8px;
     flex-shrink: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    max-width: 150px;
+    width: 100%;
+}
+
+.header-btn:hover{
+    background-color: #9277FF;
 }
 
 .no-info {
@@ -184,6 +210,9 @@ body{
     text-align: center;
 }
 
+.form-box {
+    position: relative;
+}
 .info-text {
     margin: 0 auto;
     max-width: 193px;
@@ -243,7 +272,7 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 5;
+    z-index: 3;
     opacity: 0.4984;
     background: #000;
     flex-shrink: 0;
