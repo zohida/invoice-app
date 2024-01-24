@@ -28,15 +28,39 @@
 }
 
 :root {
-    /* --light-mode : #F8F8FB;
-    --dark-mode : #000 */
+    /* colors */
+    --primary-color: #7C5DFA;
+    --secondary-color:#9277FF ;
+    --white-color: #fff;
+    --black-color: #1E2139;
+    --shadow-color: rgba(41, 47, 54, 0.2);
 
-    --light-mode : #000;
-    --dark-mode :#F8F8FB
-}
+    /* background colors */
+    --white-bg-color: #F8F8FB;
+    --dark-bg-color: #141625;
+    --color--btn: #000;
+  }
+
+  .dark-mode {
+    /* colors */
+    --primary-color: #7C5DFA;
+    --secondary-color:#9277FF ;
+    --white-color: #fff;
+    --black-color: #1E2139;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --refresh-color: #292f36;
+    /* background colors */
+    --white-bg-color: #141625;
+    --dark-bg-color: #F8F8FB;
+    --color--btn: #fff;
+  }
 
 img{
     vertical-align: middle;
+}
+
+.hidden {
+    display: none;
 }
 
 .visually-hidden{

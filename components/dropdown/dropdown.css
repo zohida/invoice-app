@@ -92,6 +92,7 @@
     max-width: 192px;
     width: 100%;
     cursor: pointer;
+    z-index: 2;
 }
 
 .filter-select {
