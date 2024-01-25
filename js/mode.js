@@ -4,10 +4,13 @@ const body = document.querySelector('body');
 
 const modeLocal = localStorage.getItem('mode');
 
-if(modeLocal){
-    body.classList.add("dark-mode");
-    darkBtn.classList.toggle("hidden");
-    lightBtn.classList.toggle("hidden");
+if (modeLocal === 'dark-mode') {
+    body.classList.add('dark-mode');
+    darkBtn.classList.add('hidden');
+    lightBtn.classList.remove('hidden');
+} else {
+    darkBtn.classList.remove('hidden');
+    lightBtn.classList.add('hidden');
 }
 
 function toggleBtn() {
@@ -16,12 +19,12 @@ function toggleBtn() {
     body.classList.toggle('dark-mode');
 }
 
-darkBtn.addEventListener('click', () =>{
+darkBtn.addEventListener('click', () => {
     toggleBtn();
-    localStorage.setItem("mode", 'dark-mode');
-})
+    localStorage.setItem('mode', 'dark-mode');
+});
 
-lightBtn.addEventListener('click', () =>{
+lightBtn.addEventListener('click', () => {
     toggleBtn();
-    localStorage.setItem('mode', '')
-})
+    localStorage.setItem('mode', '');
+});

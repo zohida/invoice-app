@@ -1,14 +1,14 @@
 input {
     outline: none;
     cursor: pointer;
-    color:  #0C0E16;
+    color:  var(--dark-black-color);
     font-size: 15px;
     font-weight: 700;
     line-height: 15px; 
     letter-spacing: -0.25px;
     border-radius: 4px;
-    border: 1px solid  #DFE3FA;
-    background: #FFF;
+    border: 1px solid  var(--light-purple-color);
+    background: var(--bg-white-color);
     padding: 18px 30px 15px 20px;
 }
 
@@ -37,5 +37,5 @@ input:focus {
 }
 
 input.error {
-    border: 1px solid  #EC5757;
+    border: 1px solid  var(--error-color);
 }

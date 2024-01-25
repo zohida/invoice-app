@@ -10,7 +10,7 @@
     align-items: center;
     padding: 16px 32px;
     border-radius: 8px;
-    background: #FFF;
+    background: var(--bg-white-color) ;
     box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
     cursor: pointer;
     position: relative;
@@ -19,12 +19,12 @@
 }
 
 .card-wrapper:hover {
-    border: 1px solid  #7C5DFA;
+    border: 1px solid  var(--primary-color);
 }
 
 .card-id {
     margin: 0;
-    color:  #7E88C3;
+    color:  var(--grapes-color);
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -33,7 +33,7 @@
 }
 
 .card-id-number {
-    color: #0C0E16;
+    color: var(--dark-black-color);
     max-width: 65px;
     width: 100%;
     margin-right: 25px;
@@ -41,7 +41,7 @@
 
 .card-date {
     margin: 0;
-    color: #888EB0;
+    color: var(--dark-grey-color);
     font-size: 13px;
     font-weight: 500;
     line-height: 15px;
@@ -52,12 +52,12 @@
 }
 
 .card-time {
-    color: #7E88C3;
+    color: var(--grapes-color);
 }
 
 .card-info {
     margin: 0;
-    color: #858BB2;
+    color: var(--eigth-color);
     font-size: 13px;
     font-weight: 500;
     line-height: 15px; 
@@ -70,7 +70,7 @@
 
 .card-amount {
     margin: 0;
-    color:  #0C0E16;
+    color:  var(--dark-black-color);
     font-size: 15px;
     font-weight: 700;
     line-height: 24px; 

@@ -16,164 +16,182 @@
         width="103" 
         height="103">
         <div class="sidebar-pics-wrapper">
-            <img class="moon-pic" 
-            src="../../images/moon.svg" 
-            alt="Moon"
-            width="20"
-            height="20">
-            <img src="../../images/user.svg" alt="User pic"
-            width="40"
-            height="40">
+           <div class="mode-wrapper">
+              <button class="btn" id="darkBtn">
+                 <img class="moon-pic" 
+                    src="../../images/moon.svg" 
+                    id="icon-moon"
+                    alt="Moon"
+                    width="20"
+                    height="20">
+              </button>
+              <button class="btn hidden" id="lightBtn">
+                 <img class="moon-pic" 
+                    src="../../images/sun.svg" 
+                    id="icon-moon"
+                    alt="Moon"
+                    width="16"
+                    height="16">
+              </button>
+           </div>
+           <img src="../../images/user.svg" alt="User pic"
+           width="40"
+           height="40">
         </div>
-    </div>
+     </div>
     
     <main>
-        <div class="status-enter">
-            <div class="container">
-                <div class="back-wrapper">
-                    <button class="btn">
-                        <a href="../../index.html">
-                            <img 
-                    src="../../images/arrow-left.svg" 
-                    alt="arrow">
-                        </a>
-                    </button>
-                    <h2 class="status-title">
-                        Go back
-                    </h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="status">
-           <div class="container">
-            <div class="status-inner">
-                <div class="status-type">
-                    <h4 class="status-subtitle">
-                        Status
-                    </h4>
-                    <button class="status-btn">
-                        <span class="status-btn-title">
-                            Pending
-                        </span>
-                    </button>
-                </div>
-                <div class="status-buttons">
-                    <button class="btn btn-primary">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                    <button class="btn btn-save">Mark as paid</button>
-                </div>
-            </div>
-           </div>
-        </div>
-
-        <div class="status-info">
-            <div class="container">
-                <div class="status-info-inner">
-                    <div class="general-info-box">
-                        <ul class="general-info-list ">
-                            <li class="general-info-item">
-                                <p class="general-info-text">#<span>XM9141</span>
-                                </p>
-                                <p class="general-user-info">Graphic Design</p>
-                            </li>
-                            <li class="general-info-item">
-                                <p class="general-user-info">84 Church Way</p>
-                                <p class="general-user-info"> Bradford </p>
-                                <p class="general-user-info">BD1 9PB</p>
-                                <p class="general-user-info">United Kingdom</p>
-                            </li>
-                        </ul>
-                        <ul class="user-invoice-list">
-                            <li class="user-invoice-item info-date">
-                                <div class="user-date-box">
-                                    <h4 class="user-invoice-title">
-                                    Invoice Date
-                                        </h4>
-                                    <p class="user-invoice-text">
-                                        21 Aug 2021
-                                    </p>
-                                </div>
-
-                                <div class="user-date-box">
-                                    <h4 class="user-invoice-title">
-                                        Payment Due
-                                    </h4>
-                                    <p class="user-invoice-text">
-                                        20 Sep 2021
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="user-invoice-item">
-                                <div class="user-date-box">
-                                    <h4 class="user-invoice-title">
-                                        Bill To
-                                    </h4>
-                                    <p class="user-invoice-text">
-                                        Alex Grim
-                                    </p>
-                                </div>
-                                <div class="user-address-wrap">
-                                    <p class="general-user-info user-address">19 Union Terrace</p>
-                                    <p class="general-user-info user-address">London</p>
-                                    <p class="general-user-info user-address">E1 3EZ</p>
-                                    <p class="general-user-info user-address">United Kingdom</p>
-                                </div>
-                            </li>
-                            <li class="user-invoice-item">
-                                <div class="user-date-box">
-                                    <h4 class="user-invoice-title">
-                                        Sent to
-                                    </h4>
-                                    <p class="user-invoice-text">
-                                        alexgrim@mail.com
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+        <div class="wrapper-status-sm">
+            <div class="status-enter">
+                <div class="container">
+                    <div class="back-wrapper">
+                        <button class="btn">
+                            <a href="../../index.html">
+                                <img 
+                        src="../../images/arrow-left.svg" 
+                        alt="arrow">
+                            </a>
+                        </button>
+                        <h2 class="status-title">
+                            Go back
+                        </h2>
                     </div>
-                    <ul class="info-list">
-
-                        <li>
-                            <ul class="status-information">
-                                <li class="first">Item Name</li>
-                                <li class="second">QTY.</li>
-                                <li class="third right1"> Price</li>
-                                <li class="right">Total</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul>
-                                <li class="first first-name">Banner Design</li>
-                                <li class="second second-name">1</li>
-                                <li class="third third-amount"> £ 156.00</li>
-                                <li class="fourth">£ 156.00</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul>
-                                <li class="first first-name">Email Design</li>
-                                <li class="second second-name">2</li>
-                                <li class="third third-amount"> £ 200.00</li>
-                                <li class="fourth">£ 400.00</li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                    <ul class="total-amount">
-                        <li class="amount-title">Amount Due</li>
-                        <li>
-                            <span class="amount">
-                                £ 556.00
+                </div>
+            </div>
+    
+            <div class="status">
+               <div class="container">
+                <div class="status-inner">
+                    <div class="status-type">
+                        <h4 class="status-subtitle">
+                            Status
+                        </h4>
+                        <button class="status-btn">
+                            <span class="status-btn-title">
+                                Pending
                             </span>
-                        </li>
-                    </ul>
-
+                        </button>
+                    </div>
+                    <div class="status-buttons">
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-save">Mark as paid</button>
+                    </div>
+                </div>
+               </div>
+            </div>
+    
+            <div class="status-info">
+                <div class="container">
+                    <div class="status-info-inner">
+                        <div class="general-info-box">
+                            <ul class="general-info-list ">
+                                <li class="general-info-item">
+                                    <p class="general-info-text">#<span>XM9141</span>
+                                    </p>
+                                    <p class="general-user-info">Graphic Design</p>
+                                </li>
+                                <li class="general-info-item">
+                                    <p class="general-user-info">84 Church Way</p>
+                                    <p class="general-user-info"> Bradford </p>
+                                    <p class="general-user-info">BD1 9PB</p>
+                                    <p class="general-user-info">United Kingdom</p>
+                                </li>
+                            </ul>
+                            <ul class="user-invoice-list">
+                                <li class="user-invoice-item info-date">
+                                    <div class="user-date-box">
+                                        <h4 class="user-invoice-title">
+                                        Invoice Date
+                                            </h4>
+                                        <p class="user-invoice-text user-from-data">
+                                            21 Aug 2021
+                                        </p>
+                                    </div>
+    
+                                    <div class="user-date-box">
+                                        <h4 class="user-invoice-title">
+                                            Payment Due
+                                        </h4>
+                                        <p class="user-invoice-text user-from-data">
+                                            20 Sep 2021
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="user-invoice-item">
+                                    <div class="user-date-box">
+                                        <h4 class="user-invoice-title">
+                                            Bill To
+                                        </h4>
+                                        <p class="user-invoice-text user-from-data">
+                                            Alex Grim
+                                        </p>
+                                    </div>
+                                    <div class="user-address-wrap">
+                                        <p class="general-user-info user-address">19 Union Terrace</p>
+                                        <p class="general-user-info user-address">London</p>
+                                        <p class="general-user-info user-address">E1 3EZ</p>
+                                        <p class="general-user-info user-address">United Kingdom</p>
+                                    </div>
+                                </li>
+                                <li class="user-invoice-item">
+                                    <div class="user-date-box">
+                                        <h4 class="user-invoice-title">
+                                            Sent to
+                                        </h4>
+                                        <p class="user-invoice-text user-from-data">
+                                            alexgrim@mail.com
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="info-list">
+    
+                            <li>
+                                <ul class="status-information">
+                                    <li class="first">Item Name</li>
+                                    <li class="second">QTY.</li>
+                                    <li class="third right1"> Price</li>
+                                    <li class="right">Total</li>
+                                </ul>
+                            </li>
+    
+                            <li>
+                                <ul>
+                                    <li class="first first-name">Banner Design</li>
+                                    <li class="second second-name">1</li>
+                                    <li class="third third-amount"> £ 156.00</li>
+                                    <li class="fourth">£ 156.00</li>
+                                </ul>
+                            </li>
+    
+                            <li>
+                                <ul>
+                                    <li class="first first-name">Email Design</li>
+                                    <li class="second second-name">2</li>
+                                    <li class="third third-amount"> £ 200.00</li>
+                                    <li class="fourth">£ 400.00</li>
+                                </ul>
+                            </li>
+    
+                        </ul>
+                        <ul class="total-amount">
+                            <li class="amount-title">Amount Due</li>
+                            <li>
+                                <span class="amount">
+                                    £ 556.00
+                                </span>
+                            </li>
+                        </ul>
+    
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="./status.js"></script>
+    <script src="../../js/mode.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 </html>

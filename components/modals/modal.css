@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 .modal-invoice{
-    background-color: #FFF;
+    background-color: var(--dark-white-color);
     border-radius: 0px 20px 20px 0px;
     max-width: 719px;
     width: 100%;
@@ -84,16 +84,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     align-items: center;
     max-width: 719px;
-    width: 100%;
+    width: 90%;
     border-radius: 0px 20px 20px 0px;
     height: 110px;
-    width: 100%;
+    width: 90%;
     bottom: 0;
     left: 0;
     position: fixed;
-    background-color: #FFF;
+    background-color: var(--dark-white-color);
     z-index: 10;
-    border: 1px solid #F9FAFE;
+    border: 1px solid var(--modal-color);
     flex-shrink: 0;
     padding-left: 159px;
 }
@@ -123,7 +123,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .modal-delete {
     position: fixed;
     border-radius: 8px;
-    background: #FFF;
+    background: var(--modal-bg-color);
     box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
     transform: translate(-50%, -50%);
     max-width: 480px;
@@ -140,7 +140,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .modal-subtitle {
     margin: 12px 0 0;
-    color:  #888EB0;
+    color:  var(--dark-grey-color);
     font-size: 13px;
     font-weight: 500;
     line-height: 22px;
@@ -179,8 +179,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     list-style-type: none;
 }
 
+.invoice-title {
+    color: var(--dark-black-color);
+}
+
+.invoice-items-title {
+    color: var(--title-color);
+}
+
 .items-title {
-    color: #7E88C3;
+    color: var(--grapes-color);
     font-family: "League Spartan";
     font-size: 13px;
     font-style: normal;
@@ -251,7 +259,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .total {
     max-width: 56px;
     width: 100%; 
-    color:  #888EB0;
+    color:  var(--dark-grey-color);
     font-family: "League Spartan";
     font-size: 15px;
     font-style: normal;
@@ -270,7 +278,7 @@ input[type="number"] {
 .message {
     position: absolute;
     right: 17px;
-    color: #EC5757;
+    color: var(--error-color);
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
@@ -279,5 +287,5 @@ input[type="number"] {
 }
 
 .error-message {
-    color: red;
+    color:  var(--error-color);
 }

@@ -28,33 +28,55 @@
 }
 
 :root {
-    /* colors */
     --primary-color: #7C5DFA;
     --secondary-color:#9277FF ;
     --white-color: #fff;
     --black-color: #1E2139;
-    --shadow-color: rgba(41, 47, 54, 0.2);
-
-    /* background colors */
     --white-bg-color: #F8F8FB;
     --dark-bg-color: #141625;
-    --color--btn: #000;
-  }
+    --dark-blue-color:#252945;
+    --light-purple-color: #DFE3FA;
+    --dark-grey-color: #888EB0;
+    --grapes-color:#7E88C3;
+    --dark-black-color:#0C0E16;
+    --error-color:#EC5757;
+    --light-red-color:#9277FF; 
+    --bg-white-color:#fff;
+    --eigth-color:#858BB2;
+    --box-shadow:rgba(72, 84, 159, 0.25);
+    --real-black-color:#000;
+    --dark-white-color:#fff;
+    --modal-color:#F9FAFE;
+    --modal-bg-color:#fff;
+    --title-color: #777F98;
+    --amount-color: #373B53;
+}
 
   .dark-mode {
-    /* colors */
     --primary-color: #7C5DFA;
     --secondary-color:#9277FF ;
-    --white-color: #fff;
+    --white-color: #0C0E16;
     --black-color: #1E2139;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --refresh-color: #292f36;
-    /* background colors */
-    --white-bg-color: #141625;
     --dark-bg-color: #F8F8FB;
-    --color--btn: #fff;
+    --white-bg-color: #141625;
+    --dark-blue-color:#252945;
+    --light-purple-color: #252945;
+    --dark-grey-color: #DFE3FA;
+    --grapes-color:#DFE3FA;
+    --dark-black-color:#fff;
+    --error-color:#EC5757;
+    --light-red-color:#9277FF; 
+    --bg-white-color:#1E2139;
+    --eigth-color:#fFF;
+    --box-shadow:rgba(0, 0, 0, 0.25);
+    --real-black-color:#fff;
+    --dark-white-color:#141625;
+    --modal-color:#141625;
+    --modal-bg-color:#1E2139;
+    --title-color: #777F98;
+    --amount-color: #0C0E16;
   }
-
+  
 img{
     vertical-align: middle;
 }
@@ -99,7 +121,7 @@ body{
     font-family: 'League Spartan', "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    background-color: #F8F8FB;
+    background-color: var(--white-bg-color);
 }
 
 .site-main{
@@ -165,7 +187,7 @@ body{
 }
 
 .header-link {
-    color:  #0C0E16;
+    color: var(--dark-black-color);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 36px;
     font-weight: 700;
@@ -174,7 +196,7 @@ body{
 
 .header-text {
     margin: 0;
-    color:  #888EB0;
+    color:  var(--grapes-color);
     font-size: 13px;
     font-weight: 500;
     line-height: 15px;
