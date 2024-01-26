@@ -208,7 +208,12 @@ function showCards(){
         <p class="card-date">Due  <span class="card-time">${item.date}</span></p>
         <p class="card-info">${item.name}</p>
         <p class="card-amount">£ ${item.total ? item.total.toFixed(2) : '0.00'}</p>
-        <div class="status-btn-box">${chooseStatus.}
+        <div class="status-btn-box">
+        <button class="status-btn">
+                    <span class="status-btn-title">
+                    Pending
+                    </span>
+                </button>
         </div>
         <button class="btn-status btn">
         <a href="../../pages/status/status.html">
