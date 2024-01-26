@@ -89,7 +89,35 @@ body{
     line-height: 15px; 
     letter-spacing: -0.25px;
 }
+.draft-btn {
+    border-radius: 6px;
+    background-color: rgba(55, 59, 83, 0.0571);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-items: center;
+    padding: 14px 19px 11px 18px;
+    color: #373B53;
+    font-family: "League Spartan";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    letter-spacing: -0.25px;
+}
 
+.draft-btn::before {
+    display: inline-block;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #373B53;
+    content: "";
+}
 .status-btn::before {
     display: inline-block;
     position: relative;
